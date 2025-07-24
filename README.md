@@ -68,3 +68,41 @@ To add a new plugin:
 - **Plugin specs**: Each plugin file returns a "spec" (specification) that tells lazy.nvim how to install and configure the plugin
 - **Lazy loading**: Plugins can be loaded only when needed to improve startup time
 - **Dependencies**: Plugins can specify other plugins they need to function
+
+
+## Install
+Here's how to clone your new repository directly into your ~/.config/nvim directory:
+
+Method 1: Clone directly into the target directory
+bash# Remove existing nvim config (make sure to backup first!)
+rm -rf ~/.config/nvim
+
+# Clone directly into the nvim directory
+git clone git@github.com:syahbes/nvim.git ~/.config/nvim
+Method 2: If the directory already exists and has files
+bash# Backup your current config (optional but recommended)
+mv ~/.config/nvim ~/.config/nvim.backup
+
+# Clone the repository
+git clone git@github.com:syahbes/nvim.git ~/.config/nvim
+Method 3: Clone into existing directory (if it's empty)
+bash# Navigate to the nvim config directory
+cd ~/.config/nvim
+
+# Initialize git and add remote
+git init
+git remote add origin git@github.com:syahbes/nvim.git
+
+# Pull the files
+git pull origin main
+After cloning:
+
+Test the configuration:
+bashnvim
+
+Install plugins: When you first open Neovim, lazy.nvim will automatically install all the plugins. You might see some installation messages.
+Check everything works: Try some key mappings like:
+
+<space>ff - Find files (Telescope)
+<space>fg - Live grep (search in files)
+gd - Go to definition (when editing code)
