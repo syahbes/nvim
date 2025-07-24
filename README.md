@@ -70,8 +70,8 @@ To add a new plugin:
 - **Dependencies**: Plugins can specify other plugins they need to function
 
 
-## Install
-Here's how to clone your new repository directly into your ~/.config/nvim directory:
+# Install
+Here's how to clone your new repository directly into your `~/.config/nvim directory:`
 
 Method 1: Clone directly into the target directory
 bash# Remove existing nvim config (make sure to backup first!)
