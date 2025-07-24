@@ -63,6 +63,24 @@ return {
     lspconfig.ts_ls.setup({
       capabilities = capabilities,
       on_attach = on_attach,
+      settings = {
+        typescript = {
+          format = {
+            semicolons = "insert",  -- Always insert semicolons
+          },
+          preferences = {
+            quoteStyle = "single",  -- Optional: use single quotes
+          },
+        },
+        javascript = {
+          format = {
+            semicolons = "insert",  -- Always insert semicolons
+          },
+          preferences = {
+            quoteStyle = "single",  -- Optional: use single quotes
+          },
+        },
+      },
     })
 
     -- CSS language server
