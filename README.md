@@ -73,12 +73,14 @@ To add a new plugin:
 # Install
 Here's how to clone your new repository directly into your `~/.config/nvim directory:`
 
-Method 1: Clone directly into the target directory
+## Method 1: Clone directly into the target directory
 bash# Remove existing nvim config (make sure to backup first!)
 rm -rf ~/.config/nvim
 
-# Clone directly into the nvim directory
+## Clone directly into the nvim directory
+```bash
 git clone git@github.com:syahbes/nvim.git ~/.config/nvim
+```
 Method 2: If the directory already exists and has files
 bash# Backup your current config (optional but recommended)
 mv ~/.config/nvim ~/.config/nvim.backup
